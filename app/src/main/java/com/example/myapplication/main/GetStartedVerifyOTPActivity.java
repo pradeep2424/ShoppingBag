@@ -20,7 +20,32 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.myapplication.R;
+import com.example.myapplication.activity.LocationGoogleMapActivity;
+import com.example.myapplication.broadcastReceiver.SMSListener;
+import com.example.myapplication.listeners.OTPListener;
+import com.example.myapplication.loader.DialogLoadingIndicator;
+import com.example.myapplication.model.UserDetails;
+import com.example.myapplication.service.retrofit.ApiInterface;
+import com.example.myapplication.service.retrofit.RetroClient;
+import com.example.myapplication.sharedPreference.PrefManagerConfig;
+import com.example.myapplication.utils.Application;
+import com.example.myapplication.utils.ConstantValues;
+import com.example.myapplication.utils.InternetConnection;
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.android.gms.tasks.TaskExecutors;
 import com.google.android.material.snackbar.Snackbar;
+import com.google.firebase.FirebaseException;
+import com.google.firebase.auth.AuthResult;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseAuthInvalidCredentialsException;
+import com.google.firebase.auth.PhoneAuthCredential;
+import com.google.firebase.auth.PhoneAuthProvider;
+import com.google.gson.JsonObject;
+import com.mukesh.OnOtpCompletionListener;
+import com.mukesh.OtpView;
+
 import org.json.JSONObject;
 
 import java.util.ArrayList;
@@ -29,6 +54,11 @@ import java.util.List;
 import java.util.Map;
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
+
+import okhttp3.ResponseBody;
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
 
 
 public class GetStartedVerifyOTPActivity extends AppCompatActivity implements OTPListener {

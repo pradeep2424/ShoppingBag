@@ -17,7 +17,7 @@
             android:src="@drawable/ic_arrow_back_white"
             android:tint="@color/main_text" />
 
-        <com.miracle.dronam.custom.MyTextView
+        <com.example.myapplication.custom.MyTextView
             android:id="@+id/tv_toolbarTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

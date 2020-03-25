@@ -14,18 +14,14 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.myapplication.R;
+import com.example.myapplication.model.UserDetails;
+import com.example.myapplication.utils.Application;
+import com.example.myapplication.utils.ConstantValues;
 import com.google.android.gms.auth.api.Auth;
 import com.google.android.gms.auth.api.credentials.Credential;
 import com.google.android.gms.auth.api.credentials.Credentials;
 import com.google.android.gms.auth.api.credentials.HintRequest;
-import com.google.android.gms.common.ConnectionResult;
-import com.google.android.gms.common.api.GoogleApiClient;
-import com.miracle.dronam.R;
-import com.miracle.dronam.activities.LocationGoogleMapActivity;
-import com.miracle.dronam.model.RestaurantObject;
-import com.miracle.dronam.model.UserDetails;
-import com.miracle.dronam.utils.Application;
-import com.miracle.dronam.utils.ConstantValues;
 
 public class GetStartedMobileNumberActivity extends AppCompatActivity {
     //    View view;
@@ -99,8 +95,8 @@ public class GetStartedMobileNumberActivity extends AppCompatActivity {
         ivBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent it = new Intent(GetStartedMobileNumberActivity.this, GetStartedActivity.class);
-                startActivity(it);
+//                Intent it = new Intent(GetStartedMobileNumberActivity.this, GetStartedActivity.class);
+//                startActivity(it);
                 finish();
             }
         });
@@ -181,8 +177,8 @@ public class GetStartedMobileNumberActivity extends AppCompatActivity {
             setResult(RESULT_CANCELED, intent);
             finish();
         } else {
-            Intent it = new Intent(this, GetStartedActivity.class);
-            startActivity(it);
+//            Intent it = new Intent(this, GetStartedActivity.class);
+//            startActivity(it);
             finish();
         }
 

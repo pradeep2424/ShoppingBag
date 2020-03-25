@@ -53,7 +53,7 @@
                     android:gravity="center_horizontal"
                     android:orientation="vertical">
 
-                    <com.miracle.dronam.custom.MyTextView
+                    <com.example.myapplication.custom.MyTextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
@@ -63,7 +63,7 @@
                         android:textSize="22sp"
                         android:textStyle="bold" />
 
-                    <com.miracle.dronam.custom.MyTextView
+                    <com.example.myapplication.custom.MyTextView
                         android:id="@+id/tv_otpText"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -126,7 +126,7 @@
                     <!--                app:padding="3dp"-->
                     <!--                app:width="40dp" />-->
 
-                    <com.miracle.dronam.custom.MyTextView
+                    <com.example.myapplication.custom.MyTextView
                         android:id="@+id/tv_otpResend"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -138,7 +138,7 @@
                         android:textSize="15sp"
                         android:visibility="gone" />
 
-                    <com.miracle.dronam.custom.MyTextView
+                    <com.example.myapplication.custom.MyTextView
                         android:id="@+id/tv_otpTimer"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -164,7 +164,7 @@
                     android:orientation="vertical"
                     android:padding="14dp">
 
-                    <com.miracle.dronam.custom.MyTextView
+                    <com.example.myapplication.custom.MyTextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"

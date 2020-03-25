@@ -26,7 +26,7 @@
                 android:layout_marginTop="90dp"
                 android:orientation="horizontal">
 
-                <com.miracle.dronam.custom.MyTextViewBold
+                <com.example.myapplication.custom.MyTextViewBold
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/dronam"
@@ -42,7 +42,7 @@
                     android:layout_marginTop="5dp"
                     android:background="#ffffff" />
 
-                <com.miracle.dronam.custom.MyTextView
+                <com.example.myapplication.custom.MyTextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
@@ -76,7 +76,7 @@
                 android:layout_margin="35dp"
                 android:orientation="vertical">
 
-                <com.miracle.dronam.custom.MyTextView
+                <com.example.myapplication.custom.MyTextView
                     android:id="@+id/tv_text"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -94,7 +94,7 @@
                     android:layout_marginTop="50dp"
                     android:orientation="vertical">
 
-                    <com.miracle.dronam.custom.MyEditText
+                    <com.example.myapplication.custom.MyEditText
                         android:id="@+id/et_mobileNumber"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -132,7 +132,7 @@
                         android:layout_weight="1"
                         android:orientation="vertical">
 
-                        <com.miracle.dronam.custom.MyEditText
+                        <com.example.myapplication.custom.MyEditText
                             android:id="@+id/et_fname"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -161,7 +161,7 @@
                         android:layout_weight="1"
                         android:orientation="vertical">
 
-                        <com.miracle.dronam.custom.MyEditText
+                        <com.example.myapplication.custom.MyEditText
                             android:id="@+id/et_lname"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -224,7 +224,7 @@
                     android:orientation="vertical"
                     android:padding="14dp">
 
-                    <com.miracle.dronam.custom.MyTextView
+                    <com.example.myapplication.custom.MyTextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
