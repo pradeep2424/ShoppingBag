@@ -5,7 +5,7 @@
     android:id="@+id/rl_rootLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@mipmap/splash_background"
+    android:background="@mipmap/ic_launcher_round"
     tools:context=".main.SplashActivity">
 
 </RelativeLayout>

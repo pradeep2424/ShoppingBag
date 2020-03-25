@@ -25,8 +25,8 @@ import com.google.android.gms.auth.api.credentials.HintRequest;
 
 public class GetStartedMobileNumberActivity extends AppCompatActivity {
     //    View view;
-    View viewToolbar;
-    ImageView ivBack;
+//    View viewToolbar;
+//    ImageView ivBack;
 
     LinearLayout llConfirm;
     EditText etMobileNumber;
@@ -54,8 +54,8 @@ public class GetStartedMobileNumberActivity extends AppCompatActivity {
     }
 
     private void init() {
-        viewToolbar = findViewById(R.id.view_toolbar);
-        ivBack = viewToolbar.findViewById(R.id.iv_back);
+//        viewToolbar = findViewById(R.id.view_toolbar);
+//        ivBack = viewToolbar.findViewById(R.id.iv_back);
 
         llConfirm = findViewById(R.id.ll_confirm);
         etMobileNumber = findViewById(R.id.et_mobileNumber);
@@ -92,14 +92,14 @@ public class GetStartedMobileNumberActivity extends AppCompatActivity {
             }
         });
 
-        ivBack.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-//                Intent it = new Intent(GetStartedMobileNumberActivity.this, GetStartedActivity.class);
-//                startActivity(it);
-                finish();
-            }
-        });
+//        ivBack.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+////                Intent it = new Intent(GetStartedMobileNumberActivity.this, GetStartedActivity.class);
+////                startActivity(it);
+//                finish();
+//            }
+//        });
     }
 
 

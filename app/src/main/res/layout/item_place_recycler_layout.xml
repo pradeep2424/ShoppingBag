@@ -48,7 +48,7 @@
                 android:layout_weight="1"
                 android:maxLines="2"
                 android:text="Payment Method"
-                android:textColor="@color/light_gray_hint"
+                android:textColor="@color/hint_gray"
                 android:textSize="12sp" />
 
         </LinearLayout>

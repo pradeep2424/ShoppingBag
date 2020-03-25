@@ -24,6 +24,8 @@
 
     <string name="current_location">My Current Location</string>
     <string name="using_gps">Using GPS</string>
+    <string name="toolbar_set_delivery_location">Set you delivery location</string>
+    <string name="location_search_box_text">Search for area or street...</string>
 
     <string name="incorrect_otp">Incorrect OTP.</string>
 
