@@ -64,3 +64,4 @@ dependencies {
     implementation project(path: ':vanillaplacepicker')
 
 }
+apply plugin: 'com.google.gms.google-services'

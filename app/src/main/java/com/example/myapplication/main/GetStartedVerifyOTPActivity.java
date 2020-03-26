@@ -102,11 +102,6 @@ public class GetStartedVerifyOTPActivity extends AppCompatActivity implements OT
         init();
         events();
         sendVerificationCode();
-
-//        sendOTP();
-
-//        if (requestSMSPermission()) {
-//        }
     }
 
     private void init() {

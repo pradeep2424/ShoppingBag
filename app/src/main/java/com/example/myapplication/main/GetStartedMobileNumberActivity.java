@@ -76,7 +76,6 @@ public class GetStartedMobileNumberActivity extends AppCompatActivity {
             public void onClick(View v) {
                 saveUserData();
 
-//                Intent intent = new Intent(GetStartedMobileNumberActivity.this, LocationGoogleMapActivity.class);
                 Intent intent = new Intent(GetStartedMobileNumberActivity.this, GetStartedVerifyOTPActivity.class);
                 intent.putExtra("CalledFrom", flagCalledFrom);
 
@@ -88,18 +87,8 @@ public class GetStartedMobileNumberActivity extends AppCompatActivity {
                     finish();
                 }
 
-
             }
         });
-
-//        ivBack.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-////                Intent it = new Intent(GetStartedMobileNumberActivity.this, GetStartedActivity.class);
-////                startActivity(it);
-//                finish();
-//            }
-//        });
     }
 
 
