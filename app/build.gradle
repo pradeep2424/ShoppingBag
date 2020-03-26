@@ -40,6 +40,7 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
 
+    implementation 'org.apache.commons:commons-text:1.6'
     implementation 'com.android.support:multidex:1.0.3'
 
     implementation 'com.squareup.retrofit2:retrofit:2.6.2'
@@ -60,6 +61,14 @@ dependencies {
 
     implementation 'com.github.ybq:Android-SpinKit:1.4.0'
     implementation 'com.github.mukeshsolanki:android-otpview-pinview:2.1.0'
+    implementation 'com.github.bumptech.glide:glide:4.9.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.9.0'
+    implementation 'com.roughike:bottom-bar:2.3.1'
+    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.19'
+    implementation 'de.hdodenhof:circleimageview:3.0.1'
+    implementation 'com.makeramen:roundedimageview:2.3.0'
+
+
     implementation project(path: ':placepicker')
     implementation project(path: ':vanillaplacepicker')
 

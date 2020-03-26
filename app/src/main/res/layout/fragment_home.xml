@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rl_rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <!--<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--    android:id="@+id/main_content"-->
+    <!--    android:layout_width="match_parent"-->
+    <!--    android:layout_height="match_parent"-->
+    <!--    android:fitsSystemWindows="true">-->
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <!--        <androidx.appcompat.widget.Toolbar-->
+        <!--            android:id="@+id/toolbar"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="?attr/actionBarSize"-->
+        <!--            android:background="?attr/colorPrimary"-->
+        <!--            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"-->
+        <!--            app:layout_scrollFlags="scroll|enterAlways"-->
+        <!--            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />-->
+
+        <include
+            android:id="@+id/view_toolbarLocation"
+            layout="@layout/toolbar_home_location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <!--    <LinearLayout-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent"-->
+    <!--        android:orientation="vertical">-->
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/appBar"
+        android:scrollbars="none"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!--                <include layout="@layout/toolbar_home_location" />-->
+
+            <!--            <include layout="@layout/toolbar_home_search" />-->
+
+<!--            <FrameLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content">-->
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <com.daimajia.slider.library.SliderLayout
+                        android:id="@+id/slider"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        app:auto_cycle="true"
+                        android:background="@drawable/temp_white_img"
+                        app:indicator_visibility="visible"
+                        app:pager_animation="Accordion"
+                        app:pager_animation_span="1100" />
+
+                </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_cuisine"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginRight="13dp"
+                    android:orientation="horizontal">
+
+                    <com.example.myapplication.custom.MyTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/food"
+                        android:textColor="#373737"
+                        android:textSize="19sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recyclerView_cuisine"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clipToPadding="false"
+                        android:divider="#fff"
+                        android:dividerHeight="0dp"
+                        android:paddingLeft="15dp"
+                        android:paddingTop="10dp"
+                        android:scrollbars="none" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="188dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="30dp"
+                android:clipToPadding="false"
+                android:paddingLeft="24dp"
+                android:paddingRight="24dp"
+                android:visibility="visible"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <com.example.myapplication.custom.MyTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/powered_by"
+                    android:textColor="@color/light_gray_hint"
+                    android:textSize="12sp" />
+
+
+                <com.example.myapplication.custom.MyTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/powered_by_hotel"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+                <com.example.myapplication.custom.MyTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="30dp"
+                    android:text="@string/powered_by_name"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <!--    </LinearLayout>-->
+
+</RelativeLayout>
